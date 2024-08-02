@@ -1,0 +1,161 @@
+
+h1 {
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+}
+.add-user {
+  background-color: #0275d8;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align:right;
+  border-radius: 4px;
+}
+
+.delete{background-color: red;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 8px 30px ;
+ 
+  margin-top: 10px;
+  cursor: pointer;}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(127, 255, 212, 0.26);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 450px;
+  margin: auto;
+ 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.update, .delete {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.update {
+  background-color: #5bc0de;
+}
+
+.update:hover {
+  background-color: #31b0d5;
+}
+
+.delete {
+  background-color: #d9534f;
+}
+
+.delete:hover {
+  background-color: #c9302c;
+}
