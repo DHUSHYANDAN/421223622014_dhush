@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="formstyle.css">
+  <script defer src="formjs.js"></script>
+</head>
+
+<body>
+  <div class="body2">
+    <div class="container mt-3">
+      <h2 class="head mb-3">BIO DATA</h2>
+      <form action=""  autocomplete="off" id="form" class="">
+        <div>
+          <span class="head2">Contact Information:</span>
+          <ol>
+            <div class="row mt-2">
+              <div class="col-sm-6">
+                <li>
+                  <div class="fi  mb-2">
+                    <label for="username">Full Name <b><span style="color: rgb(165, 42, 99);">*</span></b></label>
+                    <input type="text" class="form-control mb-2" id="username" placeholder="Enter Name" name="Name" />
+                    <div class="eror"></div>
+                    <div class="sucess"></div>
+
+                  </div>
+                </li>
+              </div>
+              <div class="col-sm-6">
+                <li>
+                  <div class="fi mb-2">
+                    <label for="phonenumber">Phone Number <b><span style="color: rgb(165, 42, 63);">*</span></b></label>
+                    <input type="text" class="form-control mb-2" id="phonenumber" placeholder="Enter Phone number"
+                      name="Phonenumber" />
+
+                    <div class="eror"></div>
+                    <div class="sucess"></div>
+                  </div>
+                </li>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <li>
+                  <div class="fi mb-2">
+                    <label for="email">Email <b><span style="color: rgb(165, 42, 63);">*</span></b></label>
+                    <input type="text" class="form-control mb-2" id="email" placeholder="Enter email" name="Email" />
+
+                    <div class="eror"></div>
+                    <div class="sucess"></div>
+                  </div>
+                </li>
+              </div>
+              <div class="col-sm-6">
+                <li>
+                  <div class="fi mb-2">
+                    <label for="link">LinkedIn Profile <b><span style="color: rgb(165, 42, 63);">*</span></b></label>
+                    <input type="text" class="form-control mb-2" id="link" placeholder="Enter Link" name="link" />
+
+                    <div class="eror"></div>
+                    <div class="sucess"></div>
+
+                  </div>
+                </li>
+              </div>
+            </div>
+            <li>
+              <div class="fi mt-2 mb-4">
+                <label for="textarea1">Address <b><span style="color: rgb(165, 42, 63);">*</span></b></label>
+                <textarea  class="form-control w-75 mt-2 mb-2" placeholder="Enter the Address" id="textarea1"
+                  type="address" name="address" style="height: 100px;"></textarea>
+
+                <div class="eror"></div>
+                <div class="sucess"></div>
+              </div>
+
+
+            </li>
+          </ol>
+        </div>
+        <div>
+          <span class="head2">Personal Information: </span>
+          <ol>
+            <li>
+              <div class="row">
+                <div class="col">
+                  <div class="fi mt-2 mb-2 ">
+                    <label for="Firstname">First Name <b><span style="color: rgb(165, 42, 63);">*</span></b></label>
+                    <input type="firstname" class="form-control mt-2 mb-2 " id="firstname" placeholder="Enter Name"
+                      name="Firstname" />
+
+                    <div class="eror"></div>
+                    <div class="sucess"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class=" mt-1 ">
+                    <label for="lastname" class="mb-2">Last Name</label>
+                    <input type="text" class="form-control  " style="height:46px ;" id="lastname"
+                      placeholder="Enter Name" name="lastname" />
+
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="fi mb-3">
+                <label for="Dateofbirth">Date of Birth <b><span style="color: rgb(165, 42, 63);">*</span></b></label>
+                <input type="date" class="form-control mt-2 mb-2 w-50" id="Dateofbirth" min="2000-01-01"
+                  max="2005-01-01" placeholder="Enter Name" name="date of birth" />
+
+                <div class="eror"></div>
+                <div class="sucess"></div>
+              </div>
+            </li>
+            <li><span style="padding-left: 8px">Gender: <b><span style="color: rgb(165, 42, 63);">*</span></b></span>
+            </li>
+            <div class="fi " style="padding-left: 15px" name="Gender" id="radio">
+              <div class="form-check mt-2">
+                <label class="form-check-label" for="radio1">Male</label>
+                <input type="radio" class="form-check-input" id="radios1" name="gender" value="option1" />
+
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" for="radio2">Female</label>
+                <input type="radio" class="form-check-input" id="radio2" name="gender" value="option2" />
+
+              </div>
+              <div class="form-check mb-2">
+                <label class="form-check-label" for="radio3">Other</label>
+                <input type="radio" class="form-check-input" id="radio3" name="gender" value="option3" />
+
+              </div>
+              <div class="eror"></div>
+              <div class="sucess"></div>
+            </div>
+            <li>
+              <div class="fi mt-2">
+                <label for="floatingSelect"> select the Status <b><span
+                      style="color: rgb(165, 42, 63);">*</span></b></label>
+                <select class="form-select mt-3 mb-2 w-50" name="select" id="floatingSelect">
+                  <option value="0" selected disabled>Select</option>
+                  <option value="1">Single</option>
+                  <option value="2">Married</option>
+                  <option value="3">Divorced</option>
+                  <option value="4">Widowed</option>
+                </select>
+
+                <div class="eror "></div>
+                <div class="sucess "></div>
+              </div>
+            </li>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <li>
+                  <div class="fi mt-3 mb-2">
+                    <label for="lang">Languages Known <b><span style="color: rgb(165, 42, 63);">*</span></b></label>
+                    <input type="text" class="form-control mb-2 mt-2" id="lang" placeholder="Language"
+                      name="Languages" />
+
+                    <div class="eror"></div>
+                    <div class="sucess"></div>
+                  </div>
+                </li>
+              </div>
+              <div class="col-sm-4">
+                <li>
+                  <div class="fi mt-3 mb-2">
+                    <label for="nation">Nationality <b><span style="color: rgb(165, 42, 63);">*</span></b></label>
+                    <input type="text" class="form-control mb-2 mt-2 " id="nation" placeholder="Nationality"
+                      name="Nationality" />
+
+                    <div class="eror"></div>
+                    <div class="sucess"></div>
+                  </div>
+                </li>
+              </div>
+              <div class="col-sm-4">
+                <li>
+                  <div class="fi mt-3  ">
+                    <label for="height" class="mb-2">Height in centimeter <b><span
+                          style="color: rgb(165, 42, 63);">*</span></b></label>
+                    <input type="number" class="form-control mb-2 " id="height" placeholder="Eample: 164"
+                      name="height" />
+
+                    <div class="eror"></div>
+                    <div class="sucess"></div>
+                  </div>
+                </li>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <li>
+                  <div class="fi mb-2 mt-2 ">
+                    <label for="weight" class="mb-2">Weight in kilograms <b><span
+                          style="color: rgb(165, 42, 63);">*</span></b></label>
+                    <input type="number" class="form-control mb-2" id="weight" placeholder="Example: 80"
+                      name="Weight" />
+
+                    <div class="eror"></div>
+                    <div class="sucess"></div>
+                  </div>
+                </li>
+              </div>
+              <div class="col-sm-4">
+                <li>
+                  <div class="fi mb-2 mt-2  ">
+                    <label for="Religion" class="mb-2">Religion <b><span
+                          style="color: rgb(165, 42, 63);">*</span></b></label>
+                    <input type="text" class="form-control mb-2" id="religion" placeholder="Enter Religion"
+                      name="Religion" />
+
+                    <div class="eror"></div>
+                    <div class="sucess"></div>
+                  </div>
+                </li>
+              </div>
+              <div class="col-sm-4">
+                <li>
+                  <div class="fi mb-2 mt-2 ">
+                    <label for="caste" class="mb-2">Caste <b><span style="color: rgb(165, 42, 63);">*</span></b></label>
+                    <input type="text" class="form-control mb-2" id="caste" placeholder="Enter Caste" name="Caste" />
+
+                    <div class="eror"></div>
+                    <div class="sucess"></div>
+                  </div>
+                </li>
+              </div>
+            </div>
+            <li>
+              <div class="fi mt-2">
+                <label for="floatingSelect2">Education Qualification:  <b><span
+                      style="color: rgb(165, 42, 63);">*</span></b></label>
+                <select class="form-select mt-3 mb-2 w-50" name="select" id="floatingSelect2">
+                  <option value="0" selected disabled>Select</option>
+                  <option value="1">Student</option>
+                  <option value="2">Graduated</option>
+                  <option value="3">Post Graduated</option>
+                  <option value="4">Unemployee</option>
+                </select>
+
+                <div class="eror "></div>
+                <div class="sucess "></div>
+              </div>
+            </li>
+            <li>
+              <div class="fi mt-2">
+                <label for="floatingSelect"> select your Experience:<b><span
+                      style="color: rgb(165, 42, 63);">*</span></b></label>
+                <select class="form-select mt-3 mb-2 w-50" name="select" id="floatingSelect3">
+                  <option value="0" selected disabled>Select</option>
+                  <option value="1">Fresher</option>
+                  <option value="2">0-1 Year Experience</option>
+                  <option value="3">1-3 Year Experience</option>
+                  <option value="4">3-5 Year Experience</option>
+                  <option value="5">5-above Year Experience</option>
+                </select>
+
+                <div class="eror "></div>
+                <div class="sucess "></div>
+              </div>
+            </li>
+            <li class="">
+
+              <div class="fi mb-3">
+                <label for="skills" class="mb-2">Skills: <b><span style="color: rgb(165, 42, 63);">*</span></b></label>
+                <input type="text" class="form-control mb-2 " id="skills" placeholder="Enter your skills" name="Technical Skills" />
+
+                <div class="eror"></div>
+                <div class="sucess"></div>
+              </div>
+
+
+            </li>
+
+
+            <li>
+              <div class="fi mb-4 mt-2">
+                <label for="floatingTextarea2 ">Any comments </label>
+                <textarea name="comments " id="comment" class="form-control mt-2" placeholder="Leave a comment here"></textarea>
+
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="container">
+          <div class="fi mb-3">
+            <input class="form-check-input" type="checkbox" id="mycheck" name="remember" />
+            <label class="form-check-label mb-2" for="myCheck">I agree on the above details. <b><span
+                  style="color: rgb(165, 42, 63);">*</span></b></label>
+            <div class="eror"></div>
+            <div class="sucess"></div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
